@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DefaultAdm.master.cs" Inherits="Slayer.UI.adm.DefaultAdm" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../css/Style.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <ul class="menu">
+                <li>
+                    <h4><a href="ManageAdm.aspx">User</a></h4>
+                    
+                    <h4><a href="ManageAdmFilme.aspx">Movie</a></h4>
+                </li>
+                <li>
+                    <asp:Literal ID="LiteralMessage" runat="server"></asp:Literal>
+                </li>
+            </ul>
+            <h1>Users</h1>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <%--myScript--%>
+    <script src="../js/script.js"></script>
+    <%--jquery--%>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <%--jqueryMask--%>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</body>
+</html>

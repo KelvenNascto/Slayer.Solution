@@ -1,0 +1,258 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99C03B49-3B16-4811-B233-4444DB293E80}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Slayer.UI</RootNamespace>
+    <AssemblyName>Slayer.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adm\ManageAdm.aspx" />
+    <Content Include="adm\ManageAdmFilme.aspx" />
+    <Content Include="css\Style.css" />
+    <Content Include="img\demonios.jpg" />
+    <Content Include="img\depravados.jpg" />
+    <Content Include="img\dominados.jpg" />
+    <Content Include="img\estranhos.jpg" />
+    <Content Include="img\lagoa.jpg" />
+    <Content Include="img\mais.jpg" />
+    <Content Include="img\mondo.jpg" />
+    <Content Include="img\pombal.jpg" />
+    <Content Include="img\primas.jpg" />
+    <Content Include="img\restos.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\script.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Resource\css\media.css" />
+    <Content Include="Resource\css\print.css" />
+    <Content Include="Resource\css\style.css" />
+    <Content Include="Resource\img\aboutImg.png" />
+    <Content Include="Resource\img\aboutSide.png" />
+    <Content Include="Resource\img\baseImgMenu.png" />
+    <Content Include="Resource\img\blogCard1.jpg" />
+    <Content Include="Resource\img\blogCard2.jpg" />
+    <Content Include="Resource\img\blogCard3.jpg" />
+    <Content Include="Resource\img\celularHome.png" />
+    <Content Include="Resource\img\footerSide.png" />
+    <Content Include="Resource\img\home768Bg.png" />
+    <Content Include="Resource\img\homeFullBg.png" />
+    <Content Include="Resource\img\imgrobottop2.png" />
+    <Content Include="Resource\img\imgrobottop3.png" />
+    <Content Include="Resource\img\imgrobottop4.png" />
+    <Content Include="Resource\img\imgrobottop5.png" />
+    <Content Include="Resource\img\imgTopo.png" />
+    <Content Include="Resource\img\imgtoprobot1.png" />
+    <Content Include="Resource\img\invaderBlack.png" />
+    <Content Include="Resource\img\invaderWhite.png" />
+    <Content Include="Resource\img\portfolio1.png" />
+    <Content Include="Resource\img\portfolio2.png" />
+    <Content Include="Resource\img\portfolio3.png" />
+    <Content Include="Resource\img\portfolio4.png" />
+    <Content Include="Resource\img\portfolio5.png" />
+    <Content Include="Resource\img\portfolio6.png" />
+    <Content Include="Resource\img\portfolio\app1.png" />
+    <Content Include="Resource\img\portfolio\app2.png" />
+    <Content Include="Resource\img\portfolio\app3.png" />
+    <Content Include="Resource\img\portfolio\device1.png" />
+    <Content Include="Resource\img\portfolio\device2.png" />
+    <Content Include="Resource\img\portfolio\device3.png" />
+    <Content Include="Resource\img\portfolio\system1.png" />
+    <Content Include="Resource\img\portfolio\system2.png" />
+    <Content Include="Resource\img\portfolio\system3.png" />
+    <Content Include="Resource\img\portfolio\thumbApp1.png" />
+    <Content Include="Resource\img\portfolio\thumbApp2.png" />
+    <Content Include="Resource\img\portfolio\thumbApp3.png" />
+    <Content Include="Resource\img\portfolio\thumbDevice1.png" />
+    <Content Include="Resource\img\portfolio\thumbDevice2.png" />
+    <Content Include="Resource\img\portfolio\thumbDevice3.png" />
+    <Content Include="Resource\img\portfolio\thumbSystem1.png" />
+    <Content Include="Resource\img\portfolio\thumbSystem2.png" />
+    <Content Include="Resource\img\portfolio\thumbSystem3.png" />
+    <Content Include="Resource\img\profile1.png" />
+    <Content Include="Resource\img\profile2.png" />
+    <Content Include="Resource\img\profile3.png" />
+    <Content Include="Resource\img\profile4.png" />
+    <Content Include="Resource\img\profile5.png" />
+    <Content Include="Resource\img\profile6.png" />
+    <Content Include="Resource\img\robot 1.png" />
+    <Content Include="Resource\img\robot 2.png" />
+    <Content Include="Resource\img\robot 3.png" />
+    <Content Include="Resource\img\robot 4.png" />
+    <Content Include="Resource\img\robot 5.png" />
+    <Content Include="Resource\js\app.js" />
+    <Content Include="Resource\js\particles.min.js" />
+    <Content Include="Resource\js\script.js" />
+    <Content Include="Resource\js\stats.js" />
+    <Content Include="user\ConsultaUser.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adm\DefaultAdm.Master.cs">
+      <DependentUpon>DefaultAdm.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adm\DefaultAdm.Master.designer.cs">
+      <DependentUpon>DefaultAdm.Master</DependentUpon>
+    </Compile>
+    <Compile Include="adm\ManageAdm.aspx.cs">
+      <DependentUpon>ManageAdm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adm\ManageAdm.aspx.designer.cs">
+      <DependentUpon>ManageAdm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adm\ManageAdmFilme.aspx.cs">
+      <DependentUpon>ManageAdmFilme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adm\ManageAdmFilme.aspx.designer.cs">
+      <DependentUpon>ManageAdmFilme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user\ConsultaUser.aspx.cs">
+      <DependentUpon>ConsultaUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\ConsultaUser.aspx.designer.cs">
+      <DependentUpon>ConsultaUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\DefaultUser.Master.cs">
+      <DependentUpon>DefaultUser.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\DefaultUser.Master.designer.cs">
+      <DependentUpon>DefaultUser.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Clear.cs" />
+    <Compile Include="Utilities\ClearImg.cs" />
+    <Compile Include="Utilities\ClearLabel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adm\DefaultAdm.Master" />
+    <None Include="packages.config" />
+    <Content Include="user\DefaultUser.Master" />
+    <Content Include="Resource\img\homeFullBg.webp" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Slayer.BLL\Slayer.BLL.csproj">
+      <Project>{375efc80-2026-45e8-b78e-89068bf8d8dd}</Project>
+      <Name>Slayer.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Slayer.DTO\Slayer.DTO.csproj">
+      <Project>{473673a0-e664-4cb0-a937-f4715babb9f5}</Project>
+      <Name>Slayer.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61162</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61162/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
